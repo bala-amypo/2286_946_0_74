@@ -18,13 +18,11 @@ public class StudentServiceImpl implements StudentService {
     StudentRepository repo;
 
     @Override
-    // create (or) Insert data
     public Student createData(Student stu) {
         return repo.save(stu);
     }
 
     @Override
-    // Fetch all records
     public List<Student> fetchRecord() {
         return repo.findAll();
     }
